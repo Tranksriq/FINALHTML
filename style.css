@@ -1,0 +1,74 @@
+/* Import Fontes CSS */ 
+
+@font-face {
+    font-family:"Bigilla" ;
+    src: url(Bigilla.otf), url(Bigilla-Bold.otf);
+}
+
+/* Estilização das fontes do HTML*/
+
+.nav-logo{
+    font-family: Bigilla, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #C2240C;   
+}
+
+.nav-items{
+    font-family: 'Italiana', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #C2240C; 
+}
+
+.title h1{
+    font-family: Bigilla, Helvetica, sans-serif;
+    font-size: 120px;
+    color: #C2240C; 
+}
+
+.hero-text p{
+    font-family: 'Italiana', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #C2240C;
+}
+
+.hero-text h2{
+    font-family: Bigilla, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #C2240C;
+}
+
+.the-bus-text p{
+    font-family: 'Italiana', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #C2240C;
+}
+
+.the-bus-text h3{
+    font-family: Bigilla, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #C2240C;
+}
+
+.forms-title p{
+    font-family: 'Italiana', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #C2240C;
+}
+
+.news-letter-button button{
+    font-family: 'Italiana', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #C2240C;
+}
+
+.forms-labels input{
+    font-family: 'Italiana', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #C2240C;
+}
+
+.footer-decoration{
+    font-family: Bigilla, Helvetica, sans-serif;
+    font-size: 60px;
+    color: #C2240C;
+}

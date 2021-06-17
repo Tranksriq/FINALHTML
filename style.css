@@ -5,11 +5,17 @@
     src: url(Bigilla.otf), url(Bigilla-Bold.otf);
 }
 
+/* Estilo background*/
+
+*{
+    background-color: #EFD4C8;
+}
+
 /* Estilização das fontes do HTML*/
 
 .nav-logo{
     font-family: Bigilla, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     color: #C2240C;   
 }
 
@@ -25,6 +31,16 @@
     color: #C2240C; 
 }
 
+.hero-images p{
+    font-family: 'Italiana', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:white;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+
+}
+
 .hero-text p{
     font-family: 'Italiana', Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -33,7 +49,7 @@
 
 .hero-text h2{
     font-family: Bigilla, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 50px;
     color: #C2240C;
 }
 
@@ -45,17 +61,27 @@
 
 .the-bus-text h3{
     font-family: Bigilla, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     color: #C2240C;
+    text-align: center;
 }
 
 .forms-title p{
     font-family: 'Italiana', Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: #C2240C;
+    text-align: center;
+    text-decoration-line: underline;
+    
 }
 
 .news-letter-button button{
+    font-family: 'Italiana', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #C2240C;
+}
+
+.news-letter-button button:hover{
     font-family: 'Italiana', Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: #C2240C;
@@ -65,10 +91,195 @@
     font-family: 'Italiana', Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: #C2240C;
+    padding-left: 10px;
 }
 
 .footer-decoration{
     font-family: Bigilla, Helvetica, sans-serif;
     font-size: 60px;
     color: #C2240C;
+}
+
+.content{
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Posicionamento nav*/
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-items ul{
+    display: flex;
+}
+
+.nav-items ul{
+    list-style-image: url('Imagens/BULLETSTAR.svg');
+} /*Estilo dos Bullets*/
+
+.nav-items ul li a{
+    text-decoration: none;
+    color: #C2240C;
+}
+
+.nav-items ul li a:hover{
+    text-decoration: underline;
+    color: #81190A;
+}
+
+.nav-items ul li{
+    margin-left: 30px;
+}
+
+/*  Configurações title */
+
+.title{
+    justify-content: center;
+    display: flex;
+    transform: translateY(-30px);
+}
+
+.title img{
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+/* animation hero-images*/
+
+
+.hero-images img{
+    transform: translateY(0px);
+    transition: 0.5s;
+}
+
+.hero-images img:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+/* Grid hero*/
+
+.hero-images{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 800px;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+.square-image{
+    margin-top: 5px;
+}
+
+.hero-text{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 800px;
+    margin: 0 auto;
+    grid-gap: 10px;
+    display: flex;
+    padding-top: 15px ;
+
+}
+
+.hero-text p{
+    padding-top: 15px ;
+    padding-right: 100px;
+    text-align: left;
+}
+
+.hero-text h2{
+    transform: translateY(-50px);
+    padding-right: 100px;
+    text-align: right;
+}
+
+/* The Bus-Text*/
+
+.the-bus-head{
+    justify-content: center;
+    display: flex;
+    transform: translateY(-40px);
+}
+
+/* Estilização closing-images*/
+
+.closing-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 800px;
+    margin: 0 auto;
+    grid-gap: 10px;
+    display: flex;
+    padding-top: 15px ;
+    transform: translateX(-60px);
+}
+
+.decoration{
+    transform: translateY(100px);
+}
+
+.stars{
+    transform: translateY(150px);
+}
+
+.horizontal{
+    transform: translateY(5px);
+}
+
+/* Estilização Forms*/
+
+.forms-labels input{
+    width: 300px;
+    height: 30px;
+    background-color: none;
+    border: 1px solid #C2240C;
+}
+
+.news-letter-button button{
+    background-color:#F5ECE6;
+    border: 1px solid #C2240C;
+    width: 130px;
+    height: 30px;
+}
+
+.news-letter-button button:hover{
+    background-color:#BECDD3;
+    border: 1px solid #C2240C
+}
+
+/* Estilização footer-decoration*/
+
+.footer-decoration{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Estilização social-icons*/
+
+.social-icons ul{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons ul li{
+    list-style: none;
+    padding: 20px;
+    margin-bottom: 5px;
+    transform: translateY(-100px);
+    transition: 0.5s;
+}
+.social-icons ul li:hover{
+    list-style: none;
+    padding: 20px;
+    margin-bottom: 20px;
+    transform: translateY(-110px);
 }

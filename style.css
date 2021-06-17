@@ -9,6 +9,7 @@
 
 *{
     background-color: #EFD4C8;
+   
 }
 
 /* Estilização das fontes do HTML*/
@@ -28,9 +29,10 @@
 .title h1{
     font-family: Bigilla, Helvetica, sans-serif;
     font-size: 120px;
-    color: #C2240C; 
+    color: #C2240C;
 }
 
+/*
 .hero-images p{
     font-family: 'Italiana', Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -38,7 +40,28 @@
     background-color: black;
     padding: 10px;
     text-align: center;
+    margin-bottom: 0px;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: 0.5s;
+}
 
+.hero-images p:hover{
+    font-family: 'Italiana', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:white;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+    transform: translateY(-50px);
+    opacity: 100%;
+}
+
+*/
+
+.hero-images p{
+    display: none;
 }
 
 .hero-text p{
@@ -103,6 +126,7 @@
 .content{
     max-width: 800px;
     margin: auto;
+    z-index: 0;
 }
 
 /* Posicionamento nav*/
@@ -282,4 +306,17 @@
     padding: 20px;
     margin-bottom: 20px;
     transform: translateY(-110px);
+}
+
+
+/* closing images animation */ 
+
+.closing-images img{
+    transform: translateY(0px);
+    transition: 0.5s;
+}
+
+.closing-images img:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
 }

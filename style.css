@@ -5,9 +5,20 @@
     src: url(Bigilla.otf), url(Bigilla-Bold.otf);
 }
 
-/* Estilo background */
+/* Estilo cursor */
 
 
+.cursor{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(194, 36, 12, 0.5);
+    transition: 0.08s;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    mix-blend-mode: hard-light;
+}
 
 /* Estilização das fontes do HTML*/
 
@@ -101,19 +112,15 @@
     transform: translatex(30px);
 }
 
+.nav{
+    max-width: 1000px;
+    margin: auto;
+}
+
 
 .content{
     max-width: 800px;
     margin: auto;
-}
-
-.hero-description{
-    font-family:'Italiana', Arial, Helvetica, sans-serif;
-    color:white;
-    padding: 5px;
-    font-size: 15px;
-    text-align: center;
-    background-color: black;
 }
 
 
@@ -144,6 +151,7 @@
     text-decoration: underline;
     color: #81190A;
 }
+
 
 .nav-items ul li{
     margin-left: 30px;
@@ -323,7 +331,7 @@
 }
 
 *{
-    background-color: #EFD4C8;
+    background-color: rgba(250, 234, 223, 1);
     scroll-behavior: smooth;
 }
 
@@ -333,3 +341,4 @@
     align-items: center;
 
 }
+

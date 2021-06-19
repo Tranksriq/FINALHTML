@@ -4,149 +4,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rosa Parks Short Biography</title>
+    <title>Rosa Parks - Biography</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="Imagens/ponter.svg" type="image/x-icon">
 </head>
+
+
 <body>
 
-<div class="nav">
-        <div class="nav-logo">
-            <p><strong>Rosa Louise McCauley Institute</strong></p>
+    <div class="nav">
+            <div class="nav-logo">
+                <p><strong>Rosa Louise McCauley Institute</strong></p>
+            </div>
+
+            <div class="nav-items">
+                <ul>
+                    <li>
+                        <a href="#life">Life</a>
+                    </li>
+                    <li>
+                        <a href="#thebus">The Bus</a>
+                    </li>
+                    <li>
+                        <a href="#newsletter">News Letter</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+
+        
+
+    <div class="content">
+            <div class="title">
+                <h1>Rosa Parks</h1>
+                <img src="Imagens/Elemento Ponta.svg" alt="">
+            </div>
+
+            <div class="hero-biography">
+
+                <div class="hero-images">
+
+                    <div class="horizontal-images">
+                        <img src="Imagens/ROSA1.svg" alt="">
+                        <br>
+                        <br>
+                        <img src="Imagens/ROSA2.svg" alt=""> 
+                    </div>
+
+                    <div class="square-image">
+                        <img src="Imagens/ROSA3.svg" alt="">
+                    </div>
+                </div>
+
+                <div id="life" class="hero-text">
+                    <p>Rosa Louise McCauley Parks was an <br> American activist in the civil rights movement  known for her pivotal role in the Montgomery <br> bus boycott. 
+                    The United States Congress has called her the first lady of civil rights and the mother of the freedom movement.</p>
+                    <h2>{February 4, 1913 - October 24, 2005}</h2>
+                </div>
+            </div>
+
+            <div id="thebus" class="the-bus">
+                <div class="the-bus-head">
+                    <div class="tunel-image">
+                        <img src="Imagens/ROSA4.svg" alt="">
+                    </div>
+                    <div class="the-bus-decoration">
+                        <img src="Imagens/THEBUSTITLE.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="the-bus-text">
+                    <p>At dusk on December 1, 1955, Parks boarded a bus on Cleveland Avenue in downtown Montgomery. She paid her ticket and sat in the front row of seats reserved for blacks in the vehicle. </p>
+                    <p>The driver, James F. Blake, continued on his traditional route. The bus was filling up until at the third stop, in front of the Empire Theater, several passengers got on. Blake noticed that a couple of white people were standing. To solve the problem, he moved the sign from ‘’colored’’ (‘’person of color’’, a term used in the United States to refer to African Americans) to behind the row where Parks was standing</p>
+                    <p>He demanded that the seated black passengers stand up so that the whites could sit. While the other three blacks rose, Rosa refused. Years later, in an interview, she recalled: ‘’my body was seized by determination, like a quilt on a cold night.’’</p>
+                    <p>Parks moved, but to the window seat. Blake, the driver, asked her, ‘’Why don't you get up?’’ She replied that:</p>
+                    <h3> “i shouldn’t have to get up”</h3>
+                    <p>The man then called the police and had Rosa Parks arrested. When the policeman arrived she asked “Why do you mess with us like that?” He replied, “I don't know, but the law is the law and you are under arrest.”</p>
+                </div>
+            </div>
+
+            <div class="closing-images">
+                <div class="decoration">
+                    <img src="Imagens/Elemento Ponta 2.svg" alt="">
+                </div>
+                <div class="vertical">
+                    <img src="Imagens/ROSA5.svg" alt="">
+                </div>
+                <div class="horizontal">
+                    <img src="Imagens/ROSA6.svg" alt="">
+                    <br>
+                    <br>
+                    <img src="Imagens/ROSA7.svg" alt="">
+                </div>
+                <div class="stars">
+                    <img src="Imagens/estrelas.svg" alt="">
+                </div>
+            </div>
+
+            <br>
+
+            <div id="newsletter" class="news-letter">
+                <div class="forms-title">
+                    <p>Recive owers newsletter</p>
+                </div>
+
+                <div class="forms-labels">
+                    <input type="name" placeholder="Name...">
+                    <label for="name"></label>
+                    <br>
+                    <br>
+                    <input type="email" placeholder="Email..." >
+                    <label for="email"></label>
+                </div>
+
+                <br>
+
+                <div class="news-letter-button">
+                    <button>Subscribe</button>
+                </div>
+
+            </div>
+                <br>
+
+        <div class="footer-decoration">
+            <p>Rosa</p>
+            <br>
+
+            <br>
+            <p>Parks</p>
         </div>
 
-        <div class="nav-items">
+        <div class="social-icons">
             <ul>
                 <li>
-                    <a href="#life">Life</a>
+                    <a href="https://www.facebook.com/rosaparkslegacy"><img class="svg" src="Imagens/facebookicon.svg" alt=""></a>
                 </li>
                 <li>
-                    <a href="#thebus">The Bus</a>
+                    <a href="https://www.instagram.com/official.rosa.parks/"><img class="svg" src="Imagens/instagramicon.svg" alt=""></a>
                 </li>
                 <li>
-                    <a href="#newsletter">News Letter</a>
+                    <a href="https://twitter.com/rosaparksmuseum"><img class="svg" src="Imagens/twittericon.svg" alt=""></a>
                 </li>
             </ul>
         </div>
-</div>
 
-    
+        <div class="cursor"></div>
 
-<div class="content">
+        <script>
+            const cursor = document.querySelector('.cursor')
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.pageX + 'px';
+                cursor.style.top = e.pageY + 'px';
+            })
+        </script>
 
-        <div class="title">
-            <h1>Rosa Parks</h1>
-            <img src="Imagens/Elemento Ponta.svg" alt="">
-        </div>
-
-        <div class="hero-biography">
-
-            <div class="hero-images">
-
-                <div class="horizontal-images">
-                    <img src="Imagens/ROSA1.svg" alt="">
-                    <br>
-                    <br>
-                    <img src="Imagens/ROSA2.svg" alt=""> 
-                </div>
-
-                <div class="square-image">
-                    <img src="Imagens/ROSA3.svg" alt="">
-                </div>
-            </div>
-
-            <div id="life" class="hero-text">
-                <p>Rosa Louise McCauley Parks was an <br> American activist in the civil rights movement  known for her pivotal role in the Montgomery <br> bus boycott. 
-                The United States Congress has called her the first lady of civil rights and the mother of the freedom movement.</p>
-                <h2>{February 4, 1913 - October 24, 2005}</h2>
-            </div>
-        </div>
-
-        <div id="thebus" class="the-bus">
-            <div class="the-bus-head">
-                <div class="tunel-image">
-                    <img src="Imagens/ROSA4.svg" alt="">
-                </div>
-                <div class="the-bus-decoration">
-                    <img src="Imagens/THEBUSTITLE.svg" alt="">
-                </div>
-            </div>
-
-            <div class="the-bus-text">
-                <p>At dusk on December 1, 1955, Parks boarded a bus on Cleveland Avenue in downtown Montgomery. She paid her ticket and sat in the front row of seats reserved for blacks in the vehicle. </p>
-                <p>The driver, James F. Blake, continued on his traditional route. The bus was filling up until at the third stop, in front of the Empire Theater, several passengers got on. Blake noticed that a couple of white people were standing. To solve the problem, he moved the sign from ‘’colored’’ (‘’person of color’’, a term used in the United States to refer to African Americans) to behind the row where Parks was standing</p>
-                <p>He demanded that the seated black passengers stand up so that the whites could sit. While the other three blacks rose, Rosa refused. Years later, in an interview, she recalled: ‘’my body was seized by determination, like a quilt on a cold night.’’</p>
-                <p>Parks moved, but to the window seat. Blake, the driver, asked her, ‘’Why don't you get up?’’ She replied that:</p>
-                <h3> “i shouldn’t have to get up”</h3>
-                <p>The man then called the police and had Rosa Parks arrested. When the policeman arrived she asked “Why do you mess with us like that?” He replied, “I don't know, but the law is the law and you are under arrest.”</p>
-            </div>
-        </div>
-
-        <div class="closing-images">
-            <div class="decoration">
-                <img src="Imagens/Elemento Ponta 2.svg" alt="">
-            </div>
-            <div class="vertical">
-                <img src="Imagens/ROSA5.svg" alt="">
-            </div>
-            <div class="horizontal">
-                <img src="Imagens/ROSA6.svg" alt="">
-                <br>
-                <br>
-                <img src="Imagens/ROSA7.svg" alt="">
-            </div>
-            <div class="stars">
-                <img src="Imagens/estrelas.svg" alt="">
-            </div>
-        </div>
-
-        <br>
-
-        <div id="newsletter" class="news-letter">
-            <div class="forms-title">
-                <p>Recive owers newsletter</p>
-            </div>
-
-            <div class="forms-labels">
-                <input type="name" placeholder="Name...">
-                <label for="name"></label>
-                <br>
-                <br>
-                <input type="email" placeholder="Email..." >
-                <label for="email"></label>
-            </div>
-
-            <br>
-
-            <div class="news-letter-button">
-                <button>Subscribe</button>
-            </div>
-
-        </div>
-            <br>
-
-    <div class="footer-decoration">
-        <p>Rosa</p>
-        <br>
-
-        <br>
-        <p>Parks</p>
     </div>
-
-    <div class="social-icons">
-        <ul>
-            <li>
-                <a href="https://www.facebook.com/rosaparkslegacy"><img class="svg" src="Imagens/facebookicon.svg" alt=""></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/official.rosa.parks/"><img class="svg" src="Imagens/instagramicon.svg" alt=""></a>
-            </li>
-            <li>
-                <a href="https://twitter.com/rosaparksmuseum"><img class="svg" src="Imagens/twittericon.svg" alt=""></a>
-            </li>
-        </ul>
     </div>
-</div>
 </body>
 </html>

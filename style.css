@@ -5,12 +5,9 @@
     src: url(Bigilla.otf), url(Bigilla-Bold.otf);
 }
 
-/* Estilo background*/
+/* Estilo background */
 
-*{
-    background-color: #EFD4C8;
-   
-}
+
 
 /* Estilização das fontes do HTML*/
 
@@ -32,37 +29,6 @@
     color: #C2240C;
 }
 
-/*
-.hero-images p{
-    font-family: 'Italiana', Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color:white;
-    background-color: black;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 0px;
-    transform: translateY(-50px);
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.hero-images p:hover{
-    font-family: 'Italiana', Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color:white;
-    background-color: black;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 0px;
-    transform: translateY(-50px);
-    opacity: 100%;
-}
-
-*/
-
-.hero-images p{
-    display: none;
-}
 
 .hero-text p{
     font-family: 'Italiana', Arial, Helvetica, sans-serif;
@@ -117,17 +83,39 @@
     padding-left: 10px;
 }
 
+.forms-labels input:focus{
+    border: 1px solid #C2240C;
+}
+
 .footer-decoration{
     font-family: Bigilla, Helvetica, sans-serif;
     font-size: 60px;
     color: #C2240C;
 }
 
+.footer-decoration p{
+    margin: 0;
+}
+
+.footer-decoration img{
+    transform: translatex(30px);
+}
+
+
 .content{
     max-width: 800px;
     margin: auto;
-    z-index: 0;
 }
+
+.hero-description{
+    font-family:'Italiana', Arial, Helvetica, sans-serif;
+    color:white;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    background-color: black;
+}
+
 
 /* Posicionamento nav*/
 
@@ -257,6 +245,10 @@
     transform: translateY(5px);
 }
 
+.vertical{
+    transform: translateY(9px);
+}
+
 /* Estilização Forms*/
 
 .forms-labels input{
@@ -275,7 +267,7 @@
 
 .news-letter-button button:hover{
     background-color:#BECDD3;
-    border: 1px solid #C2240C
+    border: 1px solid #C2240C;
 }
 
 /* Estilização footer-decoration*/
@@ -298,16 +290,17 @@
     list-style: none;
     padding: 20px;
     margin-bottom: 5px;
-    transform: translateY(-100px);
+    fill: #81190A;
     transition: 0.5s;
 }
+
 .social-icons ul li:hover{
     list-style: none;
     padding: 20px;
-    margin-bottom: 20px;
-    transform: translateY(-110px);
+    margin-bottom: 5px;
+    transform: translateY(-10px);
+    transition: 0.5s;
 }
-
 
 /* closing images animation */ 
 
@@ -319,4 +312,24 @@
 .closing-images img:hover{
     transform: translateY(-10px);
     transition: 0.5s;
+}
+
+.back-ground-rec .rec1{
+    background-color: #BECDD3;
+    width: 100%;
+    height: 900px;
+    transform: translateY(-2800px);
+    z-index: -1;
+}
+
+*{
+    background-color: #EFD4C8;
+    scroll-behavior: smooth;
+}
+
+.news-letter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
